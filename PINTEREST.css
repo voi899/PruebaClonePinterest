@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.topnav {
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+  }
+  
+  .topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color:black;
+    color: white;
+  }
+  
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  .topnav {
+    position: sticky;
+    top: 0;
+  }
+
+  .topnav-right {
+    float: right;
+  }
+
+  .topnav input[type=text] {
+    float: center;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 20px;
+    width: 70%;
+  }
+
+  .Fnavbar{
+    justify-content:right;
+    height: 20px;
+    width: 20px;
+  }
+
+  .logo-image{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+}
+
+.finder{
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+header{
+    text-align: center;
+    padding-block: 15px;
+}
+
+
+.contenedor{
+  display: grid;
+    grid-template-columns: repeat(7,1fr); 
+    grid-gap: 20px;  
+    max-width: 100vw;
+    min-height: 100vh;
+    border: 2px solid black;
+    font-size:30px;
+    color: aliceblue;
+}
+
+
+.card-image{
+    background-color: white;
+    border-radius: 11%;
+}
+
+img{
+  max-width: 100%;
+}
+
+.pa-button-over-image>.et_pb_module_wrapper{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  z-index: 10;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.pa-button-over-image>.et_pb_image
+.et_pb_wrap:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 9;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.pa-button-over-image:hover>
+.et_pb_image
+.et_pb_module_wrapper{
+  opacity: 1;
+}
+
+.pa-button-over-image:hover>
+.et_pb_image
+.et_pb_module_wrapper:before{
+  opacity: 0.3;
+}
+
+@media screen and (max-width: 960px) and (min-width: 100px) {
+  .contenedor{
+    display: grid;
+      grid-template-columns: repeat(2,1fr); 
+      grid-gap: 20px;  
+      max-width: 100vw;
+      min-height: 100vh;
+      border: 2px solid black;
+      font-size:30px;
+      color: aliceblue;
+  }
+
+  
+}
